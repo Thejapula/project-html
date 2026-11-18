@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeerReviewHub — Learn Together, Review Together</title>
+  <meta name="description" content="A modern peer review platform for online learning. Enroll in courses, submit assignments, review peers and track your progress.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing" data-page="index">
+
+  <div class="container">
+    <nav class="nav-landing">
+      <a href="index.html" class="brand"><span class="brand-mark" id="brand-icon"></span> PeerReview<span style="color:var(--purple)">Hub</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="login.html">Log in</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Get started</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="container hero">
+    <div class="reveal show">
+      <span class="badge purple">🎓 Built for college students</span>
+      <h1>Learn better with <span>peer review.</span></h1>
+      <p class="lead">A simple, focused space to study course materials, submit your work, give and receive constructive feedback, and watch your progress grow — all in one place.</p>
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-primary">Create free account</a>
+        <a href="login.html" class="btn btn-ghost" id="hero-login">Log in</a>
+        <a href="dashboard.html" class="btn btn-purple hidden" id="hero-dashboard">Go to Dashboard</a>
+      </div>
+      <div class="flex gap-2 mt-3 wrap small muted">
+        <span>✓ No setup required</span><span>✓ Instant feedback</span><span>✓ Track every step</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal show">
+      <div class="hero-stage">
+        <div class="core-emoji">📚✨</div>
+        <div class="float-card one">
+          <div class="fc-label">Courses</div><div class="fc-value">8 active</div>
+          <div class="progress mt-1"><span style="width:72%"></span></div>
+        </div>
+        <div class="float-card two">
+          <div class="fc-label">Peer rating</div><div class="fc-value stars-display">★★★★★</div>
+          <div class="small muted">Helpful feedback</div>
+        </div>
+        <div class="float-card three">
+          <div class="fc-label">Your progress</div><div class="fc-value" style="color:var(--purple)">86%</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section alt" id="about">
+    <div class="container">
+      <div class="center reveal">
+        <span class="eyebrow">About the platform</span>
+        <h2 class="section-title">Learning is better when it's shared.</h2>
+        <p class="muted" style="max-width:640px;margin:0 auto">PeerReviewHub brings the peer review process into your online courses. Instead of submitting work into a void, you get real feedback from real classmates — and you grow by reviewing theirs.</p>
+      </div>
+      <div class="grid grid-3 mt-3">
+        <div class="card feature-card reveal lift hoverable"><span class="tile"><span id="f1"></span></span><h3>Simple by design</h3><p>Clean screens and clear actions, made for busy students — no confusing menus or clutter.</p></div>
+        <div class="card feature-card reveal lift hoverable"><span class="tile purple"><span id="f2"></span></span><h3>Meaningful feedback</h3><p>Rate submissions from 1–5 and write thoughtful comments that actually help classmates improve.</p></div>
+        <div class="card feature-card reveal lift hoverable"><span class="tile green"><span id="f3"></span></span><h3>Visible progress</h3><p>Every completed activity, submission and review adds to a clear picture of how far you've come.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="center reveal"><span class="eyebrow">Features</span><h2 class="section-title">Everything you need in one place</h2></div>
+      <div class="grid grid-4 mt-3">
+        <div class="card feature-card reveal hoverable"><span class="tile"><span id="g1"></span></span><h3>Course browsing</h3><p>Search and filter courses, then enroll in a click.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile purple"><span id="g2"></span></span><h3>Rich materials</h3><p>Videos, documents and notes with completion tracking.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile amber"><span id="g3"></span></span><h3>Easy submissions</h3><p>Share a link or upload a file with a short description.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile green"><span id="g4"></span></span><h3>Peer reviews</h3><p>Claim a submission and give rated, written feedback.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile"><span id="g5"></span></span><h3>Notifications</h3><p>Know when you're assigned a review or get feedback.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile purple"><span id="g6"></span></span><h3>Progress tracking</h3><p>Bars, stats and activity history that keep you motivated.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile amber"><span id="g7"></span></span><h3>Profiles</h3><p>A clean profile showing your courses, reviews and role.</p></div>
+        <div class="card feature-card reveal hoverable"><span class="tile green"><span id="g8"></span></span><h3>Admin tools</h3><p>Manage users, courses, content and submissions easily.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="how">
+    <div class="container grid grid-2" style="align-items:start">
+      <div class="reveal"><span class="eyebrow">How it works</span><h2 class="section-title">From sign-up to feedback in six steps</h2>
+        <p class="muted">The whole workflow is built in. Follow it from your dashboard and you'll always know what to do next.</p>
+        <a href="register.html" class="btn btn-primary mt-1">Start learning today</a>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h4>Create your account</h4><p>Register as a student or reviewer in seconds.</p></div>
+        <div class="step reveal"><h4>Browse & enroll</h4><p>Find a course that interests you and enroll.</p></div>
+        <div class="step reveal"><h4>Study the content</h4><p>Watch, read and take notes — mark each item complete.</p></div>
+        <div class="step reveal"><h4>Submit your assignment</h4><p>Share a link or file and describe your work.</p></div>
+        <div class="step reveal"><h4>Review a peer</h4><p>Claim a submission, rate it 1–5 and write feedback.</p></div>
+        <div class="step reveal"><h4>Track your progress</h4><p>See completed work, feedback received and overall growth.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Ready to learn with feedback that matters?</h2>
+        <p>Join PeerReviewHub today. It's free, simple and built around the way college students actually learn.</p>
+        <a href="register.html" class="btn btn-ghost">Create your free account</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="landing-footer">
+    <div class="container between wrap">
+      <div class="brand" style="font-size:1rem"><span class="brand-mark" id="foot-icon"></span> PeerReviewHub</div>
+      <div>© <span id="year"></span> PeerReviewHub · Built for online learning.</div>
+    </div>
+  </footer>
+
+  <div id="toast-root"></div>
+  <div id="modal-root"></div>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+  <script>
+    document.getElementById('brand-icon').innerHTML = PRS.icon('graduation', 21);
+    document.getElementById('foot-icon').innerHTML = PRS.icon('graduation', 19);
+    document.getElementById('f1').innerHTML = PRS.icon('spark', 22);
+    document.getElementById('f2').innerHTML = PRS.icon('message', 22);
+    document.getElementById('f3').innerHTML = PRS.icon('chart', 22);
+    document.getElementById('g1').innerHTML = PRS.icon('book', 20);
+    document.getElementById('g2').innerHTML = PRS.icon('layers', 20);
+    document.getElementById('g3').innerHTML = PRS.icon('upload', 20);
+    document.getElementById('g4').innerHTML = PRS.icon('star', 20);
+    document.getElementById('g5').innerHTML = PRS.icon('bell', 20);
+    document.getElementById('g6').innerHTML = PRS.icon('trophy', 20);
+    document.getElementById('g7').innerHTML = PRS.icon('user', 20);
+    document.getElementById('g8').innerHTML = PRS.icon('shield', 20);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

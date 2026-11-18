@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In — PeerReviewHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+
+  <div class="auth-wrap">
+    <aside class="auth-side">
+      <a href="index.html" class="brand"><span class="brand-mark" id="side-brand"></span> PeerReview<span style="color:#ddd0ff">Hub</span></a>
+      <h2>Welcome back to your learning space.</h2>
+      <p>Pick up where you left off — check feedback, review classmates and keep your progress moving.</p>
+      <div class="quote">“Small steps, steady feedback, real progress.”</div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card">
+        <a href="index.html" class="brand mb-2" style="display:inline-flex"><span class="brand-mark" id="main-brand"></span> PeerReviewHub</a>
+        <h1>Log in</h1>
+        <p class="muted">Enter your details to continue.</p>
+
+        <form id="login-form" class="card mt-2" novalidate>
+          <div class="field">
+            <label>Email address</label>
+            <input class="input" type="email" id="login-email" placeholder="you@college.edu" autocomplete="email">
+            <div class="error-text"></div>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input class="input" type="password" id="login-password" placeholder="Your password" autocomplete="current-password">
+            <div class="error-text"></div>
+          </div>
+          <div class="between wrap mb-2">
+            <label class="checkline"><input type="checkbox" id="login-remember"> Remember me</label>
+            <a href="#" class="small" id="forgot-link">Forgot password?</a>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Log in</button>
+        </form>
+
+        <div class="demo-box mt-2">
+          <strong>Demo accounts</strong> — click to fill the form:<br>
+          <button class="btn btn-soft btn-sm mt-1 demo-fill" data-email="student@prs.edu" data-pass="student123">Student</button>
+          <button class="btn btn-soft btn-sm mt-1 demo-fill" data-email="reviewer@prs.edu" data-pass="review123">Reviewer</button>
+          <button class="btn btn-soft btn-sm mt-1 demo-fill" data-email="admin@prs.edu" data-pass="admin123">Admin</button>
+          <div class="mt-1 small">Student: <code>student@prs.edu</code> / <code>student123</code></div>
+        </div>
+
+        <p class="center muted small mt-2">New here? <a href="register.html">Create an account</a></p>
+        <p class="center"><a href="index.html">← Back to home</a></p>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast-root"></div>
+  <div id="modal-root"></div>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+  <script>
+    document.getElementById('side-brand').innerHTML = PRS.icon('graduation', 21);
+    document.getElementById('main-brand').innerHTML = PRS.icon('graduation', 20);
+    document.getElementById('forgot-link').addEventListener('click', function (e) {
+      e.preventDefault();
+      PRS.ui.toast('Demo site: use one of the demo accounts below.', 'info');
+    });
+  </script>
+</body>
+</html>

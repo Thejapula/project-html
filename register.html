@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — PeerReviewHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+
+  <div class="auth-wrap">
+    <aside class="auth-side">
+      <a href="index.html" class="brand"><span class="brand-mark" id="side-brand"></span> PeerReview<span style="color:#ddd0ff">Hub</span></a>
+      <h2>Your learning journey starts here.</h2>
+      <p>Join a community where students learn together, share work and help each other improve through thoughtful peer feedback.</p>
+      <div class="quote">“The best way to learn is to teach — and peer review lets you do both.”</div>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card">
+        <a href="index.html" class="brand mb-2" style="display:inline-flex"><span class="brand-mark" id="main-brand"></span> PeerReviewHub</a>
+        <h1>Create your account</h1>
+        <p class="muted">Fill in the details below to get started.</p>
+
+        <form id="register-form" class="card mt-2" novalidate>
+          <div class="field">
+            <label>Full name</label>
+            <input class="input" id="reg-name" placeholder="e.g. Alex Johnson" autocomplete="name">
+            <div class="error-text"></div>
+          </div>
+          <div class="field">
+            <label>Email address</label>
+            <input class="input" type="email" id="reg-email" placeholder="you@college.edu" autocomplete="email">
+            <div class="error-text"></div>
+          </div>
+          <div class="grid grid-2">
+            <div class="field">
+              <label>Password</label>
+              <input class="input" type="password" id="reg-password" placeholder="At least 6 characters" autocomplete="new-password">
+              <div class="error-text"></div>
+            </div>
+            <div class="field">
+              <label>Confirm password</label>
+              <input class="input" type="password" id="reg-confirm" placeholder="Repeat password" autocomplete="new-password">
+              <div class="error-text"></div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>I want to join as</label>
+            <div class="radio-cards">
+              <label class="radio-card active" data-role="student">
+                <input type="radio" name="role" value="student" checked>
+                <span><strong>🎓 Student</strong><br><span class="small muted">Learn, submit work and receive feedback</span></span>
+              </label>
+              <label class="radio-card" data-role="reviewer">
+                <input type="radio" name="role" value="reviewer">
+                <span><strong>⭐ Reviewer</strong><br><span class="small muted">Review peer work and guide students</span></span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block mt-1" type="submit">Create account</button>
+        </form>
+
+        <p class="center muted small mt-2">Already have an account? <a href="login.html">Log in here</a></p>
+        <p class="center"><a href="index.html">← Back to home</a></p>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast-root"></div>
+  <div id="modal-root"></div>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+  <script>
+    document.getElementById('side-brand').innerHTML = PRS.icon('graduation', 21);
+    document.getElementById('main-brand').innerHTML = PRS.icon('graduation', 20);
+  </script>
+</body>
+</html>
